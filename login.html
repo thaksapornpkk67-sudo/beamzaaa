@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>เข้าสู่ระบบ | เที่ยวบ้านเรา</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>เที่ยวบ้านเรา</h1>
+    <p>แนะนำสถานที่ท่องเที่ยว จังหวัดประจวบคีรีขันธ์</p>
+</header>
+
+<nav>
+<ul>
+    <li><a href="index.html">หน้าแรก</a></li>
+    <li><a href="places.html">ที่เที่ยว</a></li>
+    <li><a href="food.html">อาหาร</a></li>
+    <li><a href="plan.html">วางแผนเที่ยว</a></li>
+    <li><a href="travel.html">ข้อมูลการเดินทาง</a></li>
+    <li><a class="active" href="login.html">เข้าสู่ระบบ</a></li>
+</ul>
+</nav>
+
+<main class="container">
+    <div class="login-page">
+        <div class="login-image">
+            <img src="images/aomanow.jpg" alt="บรรยากาศประจวบคีรีขันธ์">
+        </div>
+
+        <div class="login-form">
+            <h2>เข้าสู่ระบบ</h2>
+
+            <form onsubmit="login(event)">
+                <label for="username">ชื่อผู้ใช้งาน</label>
+                <input type="text" id="username" placeholder="กรอกชื่อผู้ใช้งาน" required>
+
+                <label for="password">รหัสผ่าน</label>
+                <input type="password" id="password" placeholder="กรอกรหัสผ่าน" required>
+
+                <button type="submit" style="width:100%;">เข้าสู่ระบบ</button>
+            </form>
+
+            <h2 style="margin-top:35px;">สมัครสมาชิก</h2>
+
+            <form onsubmit="register(event)">
+                <label for="newname">ชื่อผู้ใช้งาน</label>
+                <input type="text" id="newname" placeholder="ตั้งชื่อผู้ใช้งาน" required>
+
+                <label for="email">อีเมล</label>
+                <input type="email" id="email" placeholder="กรอกอีเมล" required>
+
+                <label for="newpassword">รหัสผ่าน</label>
+                <input type="password" id="newpassword" placeholder="ตั้งรหัสผ่าน" required>
+
+                <button type="submit" style="width:100%;">สมัครสมาชิก</button>
+            </form>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <p>จัดทำโดยทักษพร051</p>
+    <p>ใบงานฝึกปฏิบัติวิชาการสร้างเว็บไซต์ทางธุรกิจ</p>
+</footer>
+
+<script>
+function login(event) {
+    event.preventDefault();
+    alert("ระบบเข้าสู่ระบบตัวอย่าง ยังไม่ได้เชื่อมต่อฐานข้อมูล");
+}
+
+function register(event) {
+    event.preventDefault();
+    alert("ระบบสมัครสมาชิกตัวอย่าง ยังไม่ได้เชื่อมต่อฐานข้อมูล");
+}
+</script>
+
+</body>
+</html>
